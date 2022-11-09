@@ -1,12 +1,25 @@
 package app;
 
-import java.sql.Connection;
+import java.util.List;
 
-import db.DB;
+import model.dao.DaoFactory;
+import model.dao.SellerDao;
+import model.entities.Seller;
 
 public class Program {
     public static void main(String[] args) {
-        Connection connection = DB.getConnection();
-        DB.closeConnection();
+        SellerDao sellerDao = DaoFactory.createSellerDao();
+
+        System.out.println("====================Find by id====================");
+        Seller seller = sellerDao.findById(3);
+        System.out.println(seller);
+        System.out.println("====================Find by id====================");
+
+        System.out.println("\n================Find by department================");
+        List<Seller> sellers = sellerDao.findByDepartment(2);
+        for (Seller obj : sellers) {
+            System.out.println(obj);
+        }
+        System.out.println("================Find by department================");
     }
 }
