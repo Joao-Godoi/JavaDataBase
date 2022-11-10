@@ -37,5 +37,16 @@ public class Program {
         sellerDao.insert(newSeller);
         System.out.println("Inserted! New seller: " + sellerDao.findById(newSeller.getId()));
         System.out.println("===============Insert new seller==================");
+
+        System.out.println("\n================Update a seller===================");
+        sellerById = sellerDao.findById(1);
+        System.out.println("Seller before update: " + sellerById);
+        sellerById.setName("João Godoi Update");
+        sellerById.setEmail("joaogodoi@email.com");
+        sellerDao.update(sellerById);
+        sellerById = sellerDao.findById(1);
+        System.out.println("Seller after update: " + sellerById);
+        System.out.println("================Update a seller===================");
+
     }
 }
