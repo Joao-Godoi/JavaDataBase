@@ -1,6 +1,6 @@
-# JavaDataBase
+# JavaDataBase (JDBC)
 
-Projeto criado para praticar e melhorar o uso de banco de dados utilizando Java como linguagem principal. Foi seguido as aulas do curso [Java COMPLETO Programação Orientada a Objetos](https://www.udemy.com/course/java-curso-completo/).
+Projeto criado para praticar e melhorar o uso de banco de dados utilizando Java como linguagem principal e a como biblioteca o JDBC. Foi seguido as aulas do curso [Java COMPLETO Programação Orientada a Objetos](https://www.udemy.com/course/java-curso-completo/).
 
 <br>
 
